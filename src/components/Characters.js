@@ -1,17 +1,16 @@
 import React from "react";
 import Character from "./Character";
+import "./Character.css";
 
 
 const CharacterCard = props => {
 
   const { names } = props;
 
-  //console.log(photos[0]);
-
   return (
     <div className="card-container">
-    {names.map(name => {
-      return <Character name={name} key={name[]} />
+    {names.map((name, index) => {
+      return <Character name={name} key={index} />
     })}
     </div>
   );

@@ -7,13 +7,14 @@ import axios from "axios";
 const Character = props => {
 
   const { name } = props;
+  console.log(name);
 
   return (
     <Card className="card" style={{ width: '18rem' }}>
-      <Card.Img variant="top" />
       <Card.Body>
-        <Card.Title>{name[0].name}</Card.Title>
+        <Card.Title>{name.name}</Card.Title>
         <Card.Text>
+        Year of Birth: {name.birth_year}
           <br></br>
           <br></br>
         </Card.Text>
